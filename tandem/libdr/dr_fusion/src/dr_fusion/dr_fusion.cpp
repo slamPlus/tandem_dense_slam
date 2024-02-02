@@ -4,6 +4,7 @@
 #include "dr_fusion.h"
 #include "utils/rgbd_sensor.h"
 #include "tsdfvh/tsdf_volume.h"
+#include <iostream>
 
 DrFusion::DrFusion(const struct DrFusionOptions &options) {
   sensor_ = std::make_unique<refusion::RgbdSensor>();
